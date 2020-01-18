@@ -1,0 +1,15 @@
+<p>heroes works!</p>
+
+<!-- 
+Edit name
+<input [(ngModel)]="hero.name" placeholder="name">
+
+<h2>{{hero.name | uppercase }} : Details</h2>
+<h3>id : {{hero.id}}</h3>
+<h3>name : {{hero.name}}</h3> -->
+
+<ul>
+    <li *ngFor='let i of hero' (click)="select(i)">{{i.id}} : {{ i.name}}</li>
+</ul>
+<h1>{{a}}</h1>
+<app-hero-detail [h]="s"></app-hero-detail>
